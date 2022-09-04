@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=}, initial-scale=1.0" />
+    <!--link de mi css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>eFac</title>
+  </head>
+  <header>
+    <div class="titulo"> 
+      <h1 class="eFac">eFAC</h1>
+    </div>
+    <div id="cerrarSesion"  style="display: none">
+      <button id="cerrarSes">Cerrar Sesión</button>
+    </div>
+  </header>
+  <body>
+    <div id="cajaInicio" style="display: none">
+      <form id="inicioCaja" action="">
+        <label id="lIngresoCaja">Ingresar caja incial</label><input type="number" min="0" id="ingresoCaja">
+        <button type="button" id="ingresarCaja">Ingresar</button>
+      </form>
+    </div>
+    <div id="inicioF">      
+      <form id="inicio" action="">
+        <p>Ingrese al Sistema con Usuario y Contraseña</p>
+         <input type="text" id="user" placeholder="Usuario" />
+         <input type="password" id="pass" placeholder="Contraseña" />
+         <label id="lCheckbox" >mostrar/ocultar contraseña</label> <input type="checkbox" id="mostrarPass" >
+         <button id="btnUsr">Ingresar</button>         
+      </form>
+    </div >
+    <h1 id = "saludo"></h1>
+    
+    <div id="menu"  style="display: none" >
+       <button id="btnFac">Facturas</button> 
+       <button id="btnCli">Clientes</button> 
+       <button id="btnCaja">Estado de la caja</button> 
+       <button id="btnFacBusc" style="display: none" >Buscar Facturas</button>
+       <button id="btnFacNew" style="display: none" >Nueva Factura</button> 
+    </div>
+    
+        
+    <div id="nuevaFactura" style="display: none">
+      <p id="titForm"></p>
+      <div id="buscaFac">
+        <label id="lNumfac" style="display: none">Numero:<input type="number" min="0" id="numFac"></label><br>
+      </div>
+      <form   id="cargaFactura" action="">
+        
+          <ul class="flex-outer">
+            <li id="fecha">
+              <label id="lFechas" >Fecha:</label><input type="date" id="fechas"/>
+            </li>
+            <li id="cuit">
+              <label id="lCui"   >C.U.I.T:</label><input  type="number" min="0" id="cui" placeholder="CUIT"/>
+            </li>
+            <li id="clienteLi">
+              <label id="lClientes" >Cliente:</label><input type="text"  id="clientes" placeholder="nombre y apellido/razon social"/>
+            </li>
+            <li id="direccionLi">
+              <label id="lAddress" >Direccion:</label><input type="text"  id="address" placeholder="direccion"/>
+            </li>
+            <li id="Q"> 
+              <label id="lCantPrim" >Cantidad:</label><input type="number" min="0" id="cantPrim" placeholder="Ingresa la cantidad"/>        
+            </li> 
+            <li id="producto"> <label id="lPrimProd" >Producto:</label> 
+              <select id="primProd" >     
+              <option value="">Seleccione un producto</option>    
+              <option >Iphone 12</option>   
+              <option >Iphone 13</option>                  
+              </select>
+            </li> 
+            <li id="pu">
+              <label id="lPrecioUniPri" >Precio unitario:</label><input type="number" min="0" id="precioUniPri" disabled="true">
+            </li>
+            <li id="pt">
+              <label id="lValorUno">Total Producto</label><input type="number" min="0" id="valorUno" placeholder="importe" disabled="true" />
+            </li>
+            <li id="ap">
+              <button class= "botonesF" id="addProd">Agregar producto</button>
+            </li>
+            <li id="todoSegundo" style="display: none" >
+                <li id="cantidadN">
+                  <label   id="lCantSeg">Cantidad:</label><input  type="number" min="0" id="cantSeg"  placeholder="Ingresa la cantidad"  />  
+                </li>
+                <li id="productoN">
+                  <label label   id="lsegProd" >Producto:</label>
+                  <select select   id="segProd" >     
+                  <option value="">Seleccione un producto</option>    
+                  <option >Iphone 12</option>   
+                  <option >Iphone 13</option>                  
+                  </select>
+                </li>  
+                <li id="precioN">  
+                    <label   id="lPrecioUniSeg" >Precio unitario:</label><input   type="number" min="0"    id="precioUniSeg" disabled="true">
+                </li> 
+                <li id="totalProductoN">
+                    <label   id="lValorDos">Total Producto:</label><input   type="number" min="0" id="valorDos" placeholder="importe" disabled ="true" />
+                </li>
+                <li id="borrarT">
+                    <button class= "botonesF" id="deletProd">Borrar producto</button>
+                </li>
+            </li>
+            <li id="total">
+                <label id="lValor">Total factura:</label><input type="number" min="0" id="valor" placeholder="importe" disabled = "true" />
+            </li>
+              
+            <li id="gf">
+                <button class= "botonesF" id="btn">Generar factura</button>             
+             </li>
+          </ul>        
+               
+      </form>
+
+      <button class= "botonesF" id="btnSearchFac">Buscar</button>
+      <button class= "botonesF" id="edit">Editar factura</button>      
+      <button class= "botonesF" id="save">Guardar cambios</button>   
+
+    </div>
+    
+    <div id="nuevoCliente" style="display: none">
+      <p id="tituloClientes"></p>
+      <form id="cargaClientes" action="">
+        <label id="lcliNuevo" >Cliente:</label> <input type="text" id="cliNuevo" placeholder="nombre y apellido/razon social" />
+        <label id="ldireccionCli" >Direccion:</label><input type="text" id="direccionCli" placeholder="direccion" />
+        <label id="lcuitCli"  >C.U.I.T:</label><input type="number" min="0" id="cuitCli" placeholder="cuit" />
+        <button class="botonesF" id="btnClientes">Guardar nuevo cliente</button>
+       
+      </form>
+      <button class="botonesF" id="btnClientesBack">Nuevo cliente</button>
+    </div>
+    <div id="contenedor"></div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+[
+    {"cliente": "Florencia", "cuit": 20288887292, "direccion": "Charcas 2323"},
+    {"cliente": "Sebastian", "cuit": 20288887332, "direccion": "Guemes 2344"},
+    {"cliente": "Diego Armando Maradona", "cuit": 20288887293, "direccion": "Segurola y Habana"},
+    {"cliente": "Ricardo Fort", "cuit": 20157567892, "direccion": "Libertador 1345"},
+    {"cliente": "Yael Roufe", "cuit": 27278883821, "direccion": "Virrey del pino 2523"}
+
+]

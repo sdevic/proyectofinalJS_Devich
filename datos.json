@@ -1,0 +1,7 @@
+[
+    {"numFactura":1, "fecha" :"2022-08-04","cuit":"23345678111", "cliente": "Moria Casan", "direccion":"Malabia 2323", "productoUno":"Iphone 12","cantUno":"3","precioProdUno":"50000","totalProdUno":"150000", "productoDos":"","precioProdDos":"","cantDos":"","totalProdDos":"0", "total":"150000"},
+    {"numFactura":2, "fecha" :"2022-08-05","cuit":"27278883821", "cliente": "Yael Roufe", "direccion":"Virrey del pino 2523", "productoUno":"Iphone 13","cantUno":"2","precioProdUno":"70000","totalProdUno":"140000", "productoDos":"","precioProdDos":"","cantDos":"","totalProdDos":"0", "total":"140000"},
+    {"numFactura":3, "fecha" :"2022-08-09","cuit":"20378287821", "cliente": "Lali Esposito", "direccion":"Libertador 5789", "productoUno":"Iphone 13","cantUno":"2","precioProdUno":"70000","totalProdUno":"140000", "productoDos":"Iphone 12","precioProdDos":"50000","cantDos":"1","totalProdDos":"50000", "total":"190000"},
+    {"numFactura":4, "fecha" :"2022-08-09","cuit":"20157567892", "cliente": "Ricardo Fort", "direccion":"Libertador 1345", "productoUno":"Iphone 13","cantUno":"20","precioProdUno":"70000","totalProdUno":"1400000", "productoDos":"Iphone 12","precioProdDos":"50000","cantDos":"10","totalProdDos":"500000", "total":"1900000"},
+    {"numFactura":5, "fecha" :"2022-08-015","cuit":"23345678111", "cliente": "Dimitri Alexander Caniggia", "direccion":"Pampa 1522", "productoUno":"Iphone 13","cantUno":"1","precioProdUno":"70000","totalProdUno":"70000", "productoDos":"0","precioProdDos":"","cantDos":"","totalProdDos":"0", "total":"70000"}
+]
